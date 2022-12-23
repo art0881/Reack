@@ -1,11 +1,16 @@
 
 aside{
-    padding: 10px;
+    padding: 20px;
     margin-right: 10px;
     background: green;
     width: 20%;
     
   }
   .item{
-    color: blue;
+    color: white;
+    text-decoration: none;
+  }
+ .active{
+    color: red;
+    text-decoration: none;
   }

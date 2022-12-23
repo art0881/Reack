@@ -1,16 +1,17 @@
 import React from "react";
-import classes from './aside.module.css';
+import { NavLink } from "react-router-dom";
+import aside from './aside.module.css';
 
 
 const Aside=()=>{
     return(
         <aside>
         <nav>
-        <a><div>Profile</div></a>
-        <a className={classes.item}><div>Messages</div></a>
-        <a ><div>News</div></a>
-        <a ><div>Music</div></a><br/>
-        <a ><div>Setting</div></a>
+        <div><NavLink to="/profile" className = { navData => navData.isActive ? aside.active : aside.item }>Profile</NavLink></div>
+        <div><NavLink to="/dialogs" className = { navData => navData.isActive ? aside.active : aside.item }>Messages</NavLink></div>
+        <div><NavLink to="/news" className = { navData => navData.isActive ? aside.active : aside.item }>News</NavLink></div>
+        <div><NavLink to="/music" className = { navData => navData.isActive ? aside.active : aside.item }>Music</NavLink></div><br/>
+        <div><NavLink to="/setting" className = { navData => navData.isActive ? aside.active : aside.item }>Setting</NavLink></div>
         </nav>
       </aside>
     )

@@ -1,5 +1,5 @@
 :root {
-  --center:center;
+  --center: center;
 }
 .App {
   display: flex;
@@ -7,17 +7,20 @@
   height: 100%;
   justify-content: var(--center);
   align-items: var(--center);
-
 }
-.flex_block{
+.flex_block {
   display: flex;
 }
 
-.content{
-  
+.content {
   background: blue;
   width: 700px;
-  
 }
-
-
+.main-content {
+  background: yellow;
+  padding: 20px;
+  width: 68%;
+}
+.text-center{
+  text-align: center;
+}
