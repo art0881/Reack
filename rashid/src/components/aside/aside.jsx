@@ -6,7 +6,7 @@ import aside from './aside.module.css';
 const Aside=()=>{
     return(
         <aside>
-          <p>ed</p>
+       
         <nav>
         <div><NavLink to="/profile" className = { navData => navData.isActive ? aside.active : aside.item }>Profile</NavLink></div>
         <div><NavLink to="/dialogs" className = { navData => navData.isActive ? aside.active : aside.item }>Messages</NavLink></div>
