@@ -8,22 +8,37 @@ const DialogItem = (props) =>{
             <NavLink to={path}>{props.name}</NavLink>
             </div>
 }
+
 const Messages = (props) =>{
   return <div className={d.dialog}>{props.messages}</div>
 }
+
 const Dialogs = (props) => {
+
+  let dialogsData = [
+    {id: 1, name:'Русик'},
+    {id: 2, name:'Ислам'},
+    {id: 3, name:'Рашид'}
+   ]
+   
+   let messagesData = [
+    {id: 1, message:'привет'},
+    {id: 2, message:'как дела'}
+   ]
+   let dialogsElements = [
+    <DialogItem name={dialogsData[0].name} id={dialogsData[0].id}/>,
+    <DialogItem name={dialogsData[1].name} id={dialogsData[1].id}/>,
+    <DialogItem name={dialogsData[2].name} id={dialogsData[2].id}/>
+  
+   ]
   return (
     <div className={d.dialogs}>
       <div className={d.dialogsItems}>
-        <DialogItem name="Русик" id="1"/>
-        <DialogItem name="Ислам" id="2"/>
-        <DialogItem name="Рашид" id="3"/>
-        <DialogItem name="Арсик" id="4"/>
-      </div>
+        {dialogsElements}
+       </div>
       <div className={d.messages}>
-        <Messages messages="Привет" />
-        <Messages messages="Пидараз" />
-        <Messages messages="Как дела" />
+        <Messages messages={messagesData[0].message} />
+        <Messages messages={messagesData[1].message} />
       </div>
     </div>
   );

@@ -1,13 +1,12 @@
 import React from "react";
 import Mypost from "./myposts/mypost";
+import ProfileInfo from "./profileinfo/profileinfo";
 import prof from './profile.module.css';
 const Profile=()=>{
     return(
         <div >
-           {/* АВА */}
-         <img class={prof.img} src="https://img-fotki.yandex.ru/get/229553/493212545.581/0_1df96f_8d6632fb_orig.jpg" alt=""></img>
-       <p>AVA + descrip</p>
-    <Mypost />
+          <ProfileInfo />
+            <Mypost />
        </div>
         )
 }
