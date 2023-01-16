@@ -1,11 +1,11 @@
 import React from "react";
 import Post from './post/post'
-const Myposts=()=>{
-  let messagesData = [
+const Mypost=()=>{
+  let posts = [
     {id: 1, message:'Привет пидар это пост', likesCount:'2'},
     {id: 2, message:'второй пост', likesCount:'7'}
    ]
-   
+   let postsElements = posts.map(p => <Post message={p.message} likesCount={p.likesCount}/>)
    
     return( 
        <div>
@@ -17,9 +17,8 @@ const Myposts=()=>{
         <div>
        new posts
         </div>
-        <Post message={messagesData[0].message} likesCount={messagesData[0].likesCount}/>
-        <Post message={messagesData[1].message} likesCount={messagesData[1].likesCount}/>
+        {postsElements}
         </div>
         )
 }
-export default Myposts;
+export default Mypost;
