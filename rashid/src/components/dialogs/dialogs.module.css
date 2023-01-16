@@ -11,3 +11,6 @@
 .dialogsItems .active{
     color: red;
 }
+.active{
+  color: red;
+}

@@ -24,12 +24,11 @@ const Dialogs = (props) => {
     {id: 1, message:'привет'},
     {id: 2, message:'как дела'}
    ]
-   let dialogsElements = [
-    <DialogItem name={dialogsData[0].name} id={dialogsData[0].id}/>,
-    <DialogItem name={dialogsData[1].name} id={dialogsData[1].id}/>,
 
+   
+   let dialogsElements = dialogsData
+   .map( dialog => <DialogItem name={dialog.name} id={dialog.id}/>); 
   
-   ]
   return (
     <div className={d.dialogs}>
       <div className={d.dialogsItems}>
