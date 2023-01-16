@@ -1,6 +1,6 @@
 import React from "react";
 import Post from './post/post'
-const Mypost=()=>{
+const Myposts=()=>{
   let messagesData = [
     {id: 1, message:'Привет пидар это пост', likesCount:'2'},
     {id: 2, message:'второй пост', likesCount:'7'}
@@ -22,4 +22,4 @@ const Mypost=()=>{
         </div>
         )
 }
-export default Mypost;
+export default Myposts;
