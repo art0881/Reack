@@ -19,6 +19,10 @@ const App = (props) => {
     {id: 1, message:'привет'},
     {id: 2, message:'как дела'}
    ]
+   let posts = [
+    {id: 1, message:'Привет пидар это пост', likesCount:'2'},
+    {id: 2, message:'второй пост', likesCount:'7'}
+   ]
   return (
     <BrowserRouter>
     <div className="App">
@@ -28,7 +32,7 @@ const App = (props) => {
           <Aside />
           <div className="main-content">
           <Routes>
-            <Route path="/profile" element={<Profile/>}/>
+            <Route path="/profile" element={ <Profile posts={props.posts} />}/>
             <Route path="/dialogs" element={<Dialogs dialogs={dialogs} messages={messages}/>} />
             <Route path="/news" element={<News/>}/>
             <Route path="/music" element={<Music/>}/>
