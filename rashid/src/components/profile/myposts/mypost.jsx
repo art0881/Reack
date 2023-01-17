@@ -1,6 +1,7 @@
 import React from "react";
 import Post from './post/post'
 const Mypost=()=>{
+  
   let posts = [
     {id: 1, message:'Привет пидар это пост', likesCount:'2'},
     {id: 2, message:'второй пост', likesCount:'7'}

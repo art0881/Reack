@@ -10,8 +10,7 @@ const Dialogs = (props) => {
 
   let dialogs = [
     {id: 1, name:'Русик'},
-    {id: 2, name:'Ислам'},
-    {id: 3, name:'Рашид'}
+    {id: 2, name:'Ислам'}
    ]
    
    let messages = [
