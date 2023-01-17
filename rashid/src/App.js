@@ -9,7 +9,16 @@ import Music from "./components/music/music";
 import Setting from "./components/setting/setting";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
-const App = () => {
+const App = (props) => {
+  let dialogs = [
+    {id: 1, name:'Русик'},
+    {id: 2, name:'Ислам'}
+   ]
+   
+   let messages = [
+    {id: 1, message:'привет'},
+    {id: 2, message:'как дела'}
+   ]
   return (
     <BrowserRouter>
     <div className="App">
@@ -20,7 +29,7 @@ const App = () => {
           <div className="main-content">
           <Routes>
             <Route path="/profile" element={<Profile/>}/>
-            <Route path="/dialogs/*" element={<Dialogs/>}/>
+            <Route path="/dialogs" element={<Dialogs dialogs={dialogs} messages={messages}/>} />
             <Route path="/news" element={<News/>}/>
             <Route path="/music" element={<Music/>}/>
             <Route path="/setting" element={<Setting/>}/>
