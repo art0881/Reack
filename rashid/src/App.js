@@ -10,19 +10,7 @@ import Setting from "./components/setting/setting";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 const App = (props) => {
-  let dialogs = [
-    {id: 1, name:'Русик'},
-    {id: 2, name:'Ислам'}
-   ]
-   
-   let messages = [
-    {id: 1, message:'привет'},
-    {id: 2, message:'как дела'}
-   ]
-   let posts = [
-    {id: 1, message:'Привет пидар это пост', likesCount:'2'},
-    {id: 2, message:'второй пост', likesCount:'7'}
-   ]
+
   return (
     <BrowserRouter>
     <div className="App">
@@ -33,7 +21,7 @@ const App = (props) => {
           <div className="main-content">
           <Routes>
             <Route path="/profile" element={ <Profile posts={props.posts} />}/>
-            <Route path="/dialogs" element={<Dialogs dialogs={dialogs} messages={messages}/>} />
+            <Route path="/dialogs" element={<Dialogs dialogs={props.dialogs} messages={props.messages}/>} />
             <Route path="/news" element={<News/>}/>
             <Route path="/music" element={<Music/>}/>
             <Route path="/setting" element={<Setting/>}/>
