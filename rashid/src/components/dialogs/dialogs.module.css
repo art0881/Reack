@@ -19,3 +19,6 @@
 .messages .message {
   color: white;
 }
+.active{
+  color: brown;
+}
