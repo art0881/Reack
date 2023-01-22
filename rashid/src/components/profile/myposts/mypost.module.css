@@ -1,9 +1,20 @@
-.ava {
-    width: 50px;
-    border-radius: 50%;
 
+.text{
+    border-radius: 5px;
+    border: 1px solid #c6c1c1;
+    width: 470px;
+    padding: 5px;
+    color: #4f4d4d;
+    font-size: 16px;
+    box-sizing: border-box;
+    outline:none;
 }
-.pro{
-    background: yellow;
-    padding: 20px;
+
+.button{
+    border: 1px solid #948e8e;
+    padding: 7px;
+    background-color: #4b5cd4;
+    cursor: pointer;
+    color: #fbf8f8;
+    border-radius: 5px;
 }

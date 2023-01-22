@@ -1,9 +1,26 @@
 .ava {
     width: 50px;
+    height: 50px;
+    margin-right: 20px;
     border-radius: 50%;
 
+}
+.flex_block{
+    display: flex;
 }
 .pro{
     background: yellow;
     padding: 20px;
+}
+.button{
+    border: 1px solid #948e8e;
+    padding: 7px;
+    background-color: #4b5cd4;
+    cursor: pointer;
+    color: #fbf8f8;
+    border-radius: 5px;
+}
+.text{
+    width: 400px;
+    word-wrap: break-word;
 }

@@ -24,3 +24,11 @@
 .text-center{
   text-align: center;
 }
+.button{
+  border: 1px solid #948e8e;
+  padding: 7px;
+  background-color: #4b5cd4;
+  cursor: pointer;
+  color: #fbf8f8;
+  border-radius: 5px;
+}

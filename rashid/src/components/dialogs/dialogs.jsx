@@ -25,7 +25,7 @@ const Dialogs = (props) => {
        {messagesElements}
         <div>
           <textarea ref={newMessageElement}></textarea><br/>
-          <button onClick={add}>Add</button>
+          <button className='button' onClick={add}>Add</button>
         </div>
       </div>
     </div>
