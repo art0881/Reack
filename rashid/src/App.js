@@ -8,6 +8,7 @@ import News from "./components/news/news";
 import Music from "./components/music/music";
 import Setting from "./components/setting/setting";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { updateNewPostText } from "./Redux/state";
 
 const App = (props) => {
 
@@ -20,7 +21,7 @@ const App = (props) => {
           <Aside />
           <div className="main-content">
           <Routes>
-            <Route path="/profile" element={ <Profile state={props.state.profilePage} addPost={props.addPost} />}/>
+            <Route path="/profile" element={ <Profile updateNewPostText={props.updateNewPostText} profilePage={props.state.profilePage} addPost={props.addPost} />}/>
             <Route path="/dialogs/*" element={<Dialogs state={props.state.dialogsPage} />} />
             <Route path="/news" element={<News/>}/>
             <Route path="/music" element={<Music/>}/>
