@@ -19,11 +19,11 @@ let store = {
                ]
            }
     },
-    getState(){
-     return this._state;
-    },
     _callSubscriber() {
         console.log('state срфтпув')
+    },
+    getState(){
+     return this._state;
     },
     addPost() {
         let newPost = {
